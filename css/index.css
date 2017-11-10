@@ -2,20 +2,34 @@ body {
   background-color: #f5f5f5;
 }
 
+h1 {
+  text-align: center;
+}
+
+h1>a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   background-color: #fff200;
 }
 
-header>section>div>img {
+header > section > div > img {
   width: 262px;
 }
 
-#examples img {
-  width: : 192px;
+#examples > div > img {
+  width: 192px;
 }
 
 .clear {
   height: 30px;
+  clear: both;
+}
+
+#company {
+  text-align: center;
 }
 
 
@@ -76,6 +90,9 @@ header>section>div>img {
 article h3 {
   font-weight: 900; 
   color: #b7b7b7;
+  font-size: 27px;
+  text-align: center;
+  padding: 30px;
 }
 article h3.seperator {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -180,11 +197,11 @@ nav div ul #navTwitter {
   display: inline-block !important;
 }
 /******************************************************* downloads*********************************************/
-#downloads ul li a {
+#downloads a {
    font-size: 16px;
   text-align: center;
 }
-#downloads li a {
+#downloads a {
   border: 2px solid #252525;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -203,11 +220,16 @@ nav div ul #navTwitter {
   transition: 0.25s ease-out;
   background: #252525;
 }
-#downloads li a:hover {
+#downloads a:hover {
   background: white;
   color: #252525;
 }
 /**************************************************footer*************************************************/
+footer {
+  background-color: #252525;
+  margin-top: 100px;
+}
+
 footer div #meta div:nth-child(2) a:nth-child(2) {
   background-position: 0 -170px;
 }
